@@ -1,0 +1,164 @@
+{
+    "basics": {
+        "name": "Bartłomiej Dach",
+        "label": "Programmer",
+        "email": "dach.bartlomiej@gmail.com",
+        "website": "https://bdach.github.io/",
+        "summary": "I am currently a graduate student at the Faculty of Mathematics and Information Science, which is a part of Warsaw University of Technology. I also work part-time at the Faculty as a teaching assistant.",
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "bdach",
+                "url": "https://github.com/bdach"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "Profile link",
+                "url": "https://www.linkedin.com/in/bart%C5%82omiej-dach-18a2a5129/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Centralny Ośrodek Informatyki",
+            "position": "Intern",
+            "website": "https://coi.gov.pl",
+            "startDate": "2016-07-04",
+            "endDate": "2016-09-30",
+            "summary": "Three-month internship in the Architecture and IT Standards Team",
+            "highlights": [
+                "I learned how to work in a Scrum team and got acquainted with the philosophy and basic processes of Agile development.",
+                "I developed a Maven plugin used to recognise dependency version conflicts in BOM (Bill of Materials) and POM (Project Object Model) files, using Java 8 and several libraries."
+            ]
+        },
+        {
+            "company": "Warsaw University of Technology, Faculty of Mathematics and Information Science",
+            "position": "Teaching assistant",
+            "website": "https://mini.pw.edu.pl",
+            "startDate": "2018-02-22",
+            "endDate": "",
+            "summary": "Teaching assistant during laboratories in the \"Algorithms and Data Structures 2\" course",
+            "highlights": [
+                "During weekly laboratories, I help students solve algorithmic problems, mainly related to graph theory and two-dimensional geometry, and grade their completed solutions.",
+                "As part of my bachelor's thesis, in a team of two I developed an online judge system adapted to the needs of the course. After completing the bachelor's degree, I continued development on the system and deployed it for use during the 2018 summer semester."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Windows desktop application development",
+            "keywords": [
+                "C#",
+                "Windows Presentation Framework",
+                "Reactive Extensions",
+                "ReactiveUI",
+                "NUnit",
+                "FluentAssertions"
+            ]
+        },
+        {
+            "name": "Cross-platform application development",
+            "keywords": [
+                "Java 8",
+                "Guice",
+                "Guava",
+                "Lombok",
+                "Maven",
+                "Mockito",
+                "AssertJ"
+            ]
+        },
+        {
+            "name": "Android application development",
+            "keywords": [
+                "Butterknife",
+                "Dagger",
+                "Picasso",
+                "Reactive Extensions",
+                "Firebase"
+            ]
+        },
+        {
+            "name": "Web application development",
+            "keywords": [
+                "C#",
+                "Entity Framework",
+                "ASP.NET WebAPI",
+                "NUnit",
+                "FluentAssertions",
+                "Angular 2",
+                "Python",
+                "Django",
+                "jQuery",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "name": "Interactive graphics application development",
+            "keywords": [
+                "C++",
+                "SDL",
+                "Assimp",
+                "Eigen",
+                "C#",
+                "MonoGame"
+            ]
+        }
+    ],
+    "education": [{
+        "institution": "Warsaw University of Technology, Faculty of Mathematics and Information Science",
+        "area": "Computer Science",
+        "studyType": "Bachelor of Science in Engineering",
+        "startDate": "2014-09-29",
+        "endDate": "2018-02-13",
+        "courses": [
+            "Programming in various imperative and functional languages (C, C++, C#, Java, R, Python, Haskell)",
+            "Discrete mathematics",
+            "Numerical methods",
+            "Algorithms and data structures",
+            "Operating systems",
+            "Databases",
+            "Introduction to TCP/IP networks",
+            "Software engineering",
+            "Computer graphics",
+            "Formal automata and languages",
+            "Translation methods (compilers)",
+            "Algorithms and computability"
+        ]
+    }],
+    "languages": [
+        {
+            "language": "Polish",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "Proficient (C2)"
+        },
+        {
+            "language": "French",
+            "fluency": "Basic (A1/A2)"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Electronics",
+            "keywords": [
+                "microcontrollers",
+                "single-board computers"
+            ]
+        },
+        {
+            "name": "Mathematics"
+        },
+        {
+            "name": "Video games",
+            "keywords": [
+                "puzzle games",
+                "indie games",
+                "game development"
+            ]
+        }
+    ]
+}
