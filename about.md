@@ -5,8 +5,8 @@ permalink: /about/
 ---
 
 My name is Bartłomiej Dach.
-My journey with programming started, when I picked up a short book detailing the basics of C++ around 2005.
-For quite a while my coding skills were rather meagre --- before enrolling into university the best I could do is make a simple clone of Hangman in Visual Basic *(shudder)*, but I was almost immediately certain that I wanted to learn how to create and maintain software.
+My journey with programming started when I picked up a short book detailing the basics of C++ around 2005.
+For quite a while my coding skills were rather meagre --- before enrolling into university the best I could do is make a simple clone of Hangman in Visual Basic *(shudder)* --- but I was almost immediately certain that I wanted to learn how to create and maintain software.
  
 Since then, I've finished my bachelor's degree, completed several university projects and dabbled in probably a dozen programming languages.
 But the desire to program has remained through and through, and I still find myself pulling late-nighters to create things I consider interesting.
