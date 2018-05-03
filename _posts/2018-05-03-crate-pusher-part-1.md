@@ -16,8 +16,8 @@ As I've never actually completed a proper game with proper graphics before, I sh
 # Introductory notes
 
 [Sokoban][sokoban-en-wiki] is a puzzle game played on a two-dimensional grid.
-Each Sokoban levels comprises of walls, crates and slots.
-The player controls a warehouse keeper, whose goal is to push the crates into the designated slots.
+Each Sokoban level comprises of walls, crates and slots.
+The player controls a warehouse keeper, whose goal is to push the crates onto the designated slots.
 The main difficulty of the game is to manipulate the crates correctly, so that they don't get stuck by the walls or get pushed into each other --- one bad move could prevent further progress.
 
 The choice of Sokoban for a first game is not accidental.
@@ -104,7 +104,7 @@ public void DrawTile(SpriteBatch spriteBatch, TileType type, Point point, int ti
 
 This function allows me to schedule drawing a tile of the supplied type in a `SpriteBatch`.
 The tile will be drawn such that its top left corner will have the coordinates specified in the `point` parameter, and the tile width and height will be equal to `tileSize`.
-This choice of parameters will become obvious at a alter point.
+This choice of parameters will become obvious at a later point.
 
 ## Loading levels
 
@@ -250,7 +250,7 @@ In the other case, I'm calculating the ratios of the full level dimensions to th
 > I could of course scale both dimensions using different scales, but this will make the tiles seem stretched.
 > Therefore I take the smaller ratio in both dimensions, to preserve the tile aspect ratio.
 
-The resulting ratio multiplied by the full tile size gives me the size of tiles that I can afford to draw give the screen real estate allowed:
+The resulting ratio multiplied by the full tile size gives me the size of tiles that I can afford to draw given the screen real estate allowed:
 
 ```csharp
 private int GetTileSize(int fullScaleWidth, int fullScaleHeight)
@@ -450,7 +450,7 @@ To round this off, here are two screenshots of levels, showcasing the background
 # What's next?
 
 This first post has turned out to be a lot longer than I had expected, so it's probably best for me to finish this up for the time being.
-Now there's a working display, I can move onto handling user input and implementing the actual gameplay of Sokoban, first using simple transition.
+Now there's a working display, I can move onto handling user input and implementing the actual gameplay of Sokoban, first using simple transitions.
 After that I will attempt to animate the sprites a little bit to get that extra bit of flashiness, and finish off the whole thing with some menus.
 
 If you have gotten this far, thank you for reading this post and I hope you enjoyed it!
