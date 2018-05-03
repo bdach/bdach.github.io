@@ -1,4 +1,5 @@
 skin: sea
 google_fonts:
-    - name: "Fira Sans"
-    - name: "Fira Sans Condensed"
+    - name: "Encode Sans"
+    - name: "Encode Sans Condensed"
+    - name: "Inconsolata"
