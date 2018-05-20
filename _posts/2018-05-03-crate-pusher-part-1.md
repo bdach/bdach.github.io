@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Recreating Classic Video Games: Crate Pusher, Part&nbsp;1"
+title: "Recreating Classic Video Games: Crate Pusher, Part 1"
 sub_title: "Making a clone of a classic puzzle game, one tile at a time."
 image:
     path: "/assets/images/crate_pusher/hero.png"
     thumbnail: "/assets/images/crate_pusher/thumb.png"
 categories: gamedev
+comments: true
 ---
 
 Playing computer games has been one of my favourite pastimes for far too many years now.
