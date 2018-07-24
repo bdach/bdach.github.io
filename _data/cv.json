@@ -36,12 +36,19 @@
             "position": "Teaching assistant",
             "website": "https://mini.pw.edu.pl",
             "startDate": "2018-02-22",
-            "endDate": "",
+            "endDate": "2018-06-15",
             "summary": "Teaching assistant during laboratories in the \"Algorithms and Data Structures 2\" course",
             "highlights": [
                 "During weekly laboratories, I help students solve algorithmic problems, mainly related to graph theory and two-dimensional geometry, and grade their completed solutions.",
                 "As part of my bachelor's thesis, in a team of two I developed an online judge system adapted to the needs of the course. After completing the bachelor's degree, I continued development on the system and deployed it for use during the 2018 summer semester."
             ]
+        },
+        {
+            "company": "Suntech S.A.",
+            "position": "Junior .NET developer",
+            "website": "http://www.suntech.pl/",
+            "startDate": "2018-06-25",
+            "endDate": ""
         }
     ],
     "skills": [
