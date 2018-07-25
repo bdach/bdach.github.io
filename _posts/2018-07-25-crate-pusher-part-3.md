@@ -217,7 +217,7 @@ In our case, I have the initial and destination positions, and based on those, I
 > In that case, I can take the difference between the ending and starting position (as a vector), divide that by 60, and translate the game object using the resulting vector 60 times, once every frame.
 > 
 > In the case of something as uncomplicated as CratePusher, this might well just pass by.
-> However, this method is based on the faulty assumption, that each frame is rendered in the same amount of case.
+> However, this method is based on the faulty assumption that each frame is rendered in the same amount of time.
 >
 > This is definitely not the case in higher-fidelity 3D games, as the number of polygons rendered in the frame heavily influences the rendering time.
 > And even then, in 2D games, operating system interference (such as process pre-emption) can also impact rendering times.
