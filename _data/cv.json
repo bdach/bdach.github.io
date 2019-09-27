@@ -4,7 +4,7 @@
         "label": "Programmer",
         "email": "dach.bartlomiej@gmail.com",
         "website": "https://bdach.github.io/",
-        "summary": "I am currently a graduate student at the Faculty of Mathematics and Information Science, which is a part of Warsaw University of Technology. I also work part-time at the Faculty as a teaching assistant.",
+        "summary": "I am currently a programmer at Suntech S.A., working primarily with back-end services in C# and .NET. I have also completed a MSc degree on the Warsaw University of Technology.",
         "profiles": [
             {
                 "network": "GitHub",
@@ -20,15 +20,15 @@
     },
     "work": [
         {
-            "company": "Centralny Ośrodek Informatyki",
-            "position": "Intern",
-            "website": "https://coi.gov.pl",
-            "startDate": "2016-07-04",
-            "endDate": "2016-09-30",
-            "summary": "Three-month internship in the Architecture and IT Standards Team",
+            "company": "Suntech S.A.",
+            "position": "Junior .NET developer",
+            "website": "http://www.suntech.pl/",
+            "startDate": "2018-06-25",
+            "endDate": "",
             "highlights": [
-                "I learned how to work in a Scrum team and got acquainted with the philosophy and basic processes of Agile development.",
-                "I developed a Maven plugin used to recognise dependency version conflicts in BOM (Bill of Materials) and POM (Project Object Model) files, using Java 8 and several libraries."
+                "I participated in development of scalable back-end services.",
+                "I checked the correctness and quality of new components using both unit and integration testing.",
+                "I performed root-cause analysis and deployed fixes to commercially released versions of the in-house product."
             ]
         },
         {
@@ -39,16 +39,21 @@
             "endDate": "2018-06-15",
             "summary": "Teaching assistant during laboratories in the \"Algorithms and Data Structures 2\" course",
             "highlights": [
-                "During weekly laboratories, I help students solve algorithmic problems, mainly related to graph theory and two-dimensional geometry, and grade their completed solutions.",
+                "During weekly laboratories, I helped students solve algorithmic problems, mainly related to graph theory and two-dimensional geometry, and grade their completed solutions.",
                 "As part of my bachelor's thesis, in a team of two I developed an online judge system adapted to the needs of the course. After completing the bachelor's degree, I continued development on the system and deployed it for use during the 2018 summer semester."
             ]
         },
         {
-            "company": "Suntech S.A.",
-            "position": "Junior .NET developer",
-            "website": "http://www.suntech.pl/",
-            "startDate": "2018-06-25",
-            "endDate": ""
+            "company": "Centralny Ośrodek Informatyki",
+            "position": "Intern",
+            "website": "https://coi.gov.pl",
+            "startDate": "2016-07-04",
+            "endDate": "2016-09-30",
+            "summary": "Three-month internship in the Architecture and IT Standards Team",
+            "highlights": [
+                "I learned how to work in a Scrum team and got acquainted with the philosophy and basic processes of Agile development.",
+                "I developed a Maven plugin used to recognise dependency version conflicts in BOM (Bill of Materials) and POM (Project Object Model) files, using Java 8 and several libraries."
+            ]
         }
     ],
     "skills": [
@@ -115,6 +120,21 @@
     ],
     "education": [{
         "institution": "Warsaw University of Technology, Faculty of Mathematics and Information Science",
+        "area": "Computer Science - Methods of Artificial Intelligence",
+        "studyType": "Master of Science in Engineering",
+        "startDate": "2018-02-19",
+        "endDate": "2019-09-26",
+        "courses": [
+            "Knowledge representation",
+            "Introduction to evolutionary algorithms",
+            "Mathematical programming (optimization)",
+            "Neural networks",
+            "Analysis and processing of biometric images",
+            "Human recognition by biometric methods"
+        ]
+    },
+    {
+        "institution": "Warsaw University of Technology, Faculty of Mathematics and Information Science",
         "area": "Computer Science",
         "studyType": "Bachelor of Science in Engineering",
         "startDate": "2014-09-29",
@@ -165,6 +185,13 @@
                 "puzzle games",
                 "indie games",
                 "game development"
+            ]
+        },
+        {
+            "name": "Music",
+            "keywords": [
+                "rhythm games",
+                "synthesizers"
             ]
         }
     ]
