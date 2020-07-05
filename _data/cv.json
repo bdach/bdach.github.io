@@ -4,7 +4,7 @@
         "label": "Programmer",
         "email": "dach.bartlomiej@gmail.com",
         "website": "https://bdach.github.io/",
-        "summary": "I am currently a programmer at Suntech S.A., working primarily with back-end services in C# and .NET. I have also completed a MSc degree at the Warsaw University of Technology.",
+        "summary": "I am currently a programmer at eRecruitment Solutions, working primarily with back-end services in C# and .NET, and an open-source contributor in my free time. I have earned a MSc degree at the Warsaw University of Technology.",
         "profiles": [
             {
                 "network": "GitHub",
@@ -20,13 +20,24 @@
     },
     "work": [
         {
+            "company": "eRecruitment Solutions",
+            "position": ".NET developer",
+            "website": "https://erecruiter.pl",
+            "startDate": "2019-11-17",
+            "highlights": [
+                "I am participating in development of a system-as-a-service platform for recruiters and HR teams.",
+                "I am working with .NET Core services using a distributed, event-oriented microservice architecture.",
+                "I have proposed and developed proof-of-concept tools to aid internal development processes."
+            ]
+        },
+        {
             "company": "Suntech S.A.",
             "position": "Junior .NET developer",
-            "website": "http://www.suntech.pl/",
+            "website": "https://www.suntech.pl/",
             "startDate": "2018-06-25",
-            "endDate": "",
+            "endDate": "2019-11-07",
             "highlights": [
-                "I participated in development of scalable back-end services.",
+                "I participated in development of scalable back-end services for a telecommunications network planning solution.",
                 "I checked the correctness and quality of new components using both unit and integration testing.",
                 "I performed root-cause analysis and deployed fixes to commercially released versions of the in-house product."
             ]
@@ -56,7 +67,48 @@
             ]
         }
     ],
+    "volunteer": [
+        {
+            "organization": "osu!lazer",
+            "position": "Collaborator",
+            "website": "https://github.com/ppy/osu",
+            "startDate": "2019-10-02",
+            "summary": "Open source collaborator in the osu!lazer project — a cross-platform rhythm game",
+            "highlights": [
+                "I have assisted in triage of over 500 closed issues.",
+                "I have reviewed over 300 merged pull requests.",
+                "I have submitted over 50 merged pull requests over two repositories (both the game itself and the custom framework it uses)."
+            ]
+        }
+    ],
     "skills": [
+        {
+            "name": "Web application development",
+            "keywords": [
+                "C#",
+                "ASP.NET Core Web API",
+                "Entity Framework Core",
+                "Dapper",
+                "NUnit",
+                "FluentAssertions",
+                "Python",
+                "Django",
+                "jQuery",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "name": "Interactive graphics application development",
+            "keywords": [
+                "C#",
+                ".NET Core",
+                "Entity Framework Core",
+                "OpenGL",
+                "OpenTK",
+                "SDL"
+            ]
+        },
         {
             "name": "Windows desktop application development",
             "keywords": [
@@ -72,6 +124,7 @@
             "name": "Cross-platform application development",
             "keywords": [
                 "Java 8",
+                "JavaFX",
                 "Guice",
                 "Guava",
                 "Lombok",
@@ -88,33 +141,6 @@
                 "Picasso",
                 "Reactive Extensions",
                 "Firebase"
-            ]
-        },
-        {
-            "name": "Web application development",
-            "keywords": [
-                "C#",
-                "Entity Framework",
-                "ASP.NET WebAPI",
-                "NUnit",
-                "FluentAssertions",
-                "Angular 2",
-                "Python",
-                "Django",
-                "jQuery",
-                "HTML",
-                "CSS"
-            ]
-        },
-        {
-            "name": "Interactive graphics application development",
-            "keywords": [
-                "C++",
-                "SDL",
-                "Assimp",
-                "Eigen",
-                "C#",
-                "MonoGame"
             ]
         }
     ],
@@ -170,16 +196,6 @@
     ],
     "interests": [
         {
-            "name": "Electronics",
-            "keywords": [
-                "microcontrollers",
-                "single-board computers"
-            ]
-        },
-        {
-            "name": "Mathematics"
-        },
-        {
             "name": "Video games",
             "keywords": [
                 "puzzle games",
@@ -193,6 +209,16 @@
                 "rhythm games",
                 "synthesizers"
             ]
+        },
+        {
+            "name": "Electronics",
+            "keywords": [
+                "microcontrollers",
+                "single-board computers"
+            ]
+        },
+        {
+            "name": "Mathematics"
         }
     ]
 }
