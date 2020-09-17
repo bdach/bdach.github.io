@@ -6,7 +6,6 @@ image:
     path: "/assets/images/lazer/hero.png"
     thumbnail: "/assets/images/lazer/thumb.png"
 categories: open-source
-comments: true
 ---
 
 On August 31, 2019, I submitted [my first pull request](https://github.com/ppy/osu/pull/5928) to the [osu!lazer](https://github.com/ppy/osu) project.

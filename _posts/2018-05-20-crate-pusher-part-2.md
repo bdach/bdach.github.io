@@ -6,7 +6,6 @@ image:
     path: "/assets/images/crate_pusher/hero.png"
     thumbnail: "/assets/images/crate_pusher/thumb.png"
 categories: gamedev
-comments: true
 ---
 
 Continuing from where the [first part][part1] left off, I describe the process of adding proper keyboard input support and implementing the game logic, while touching on some topics that might seem wholly unrelated, such as finite state automata and transactional data models.

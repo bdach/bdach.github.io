@@ -6,7 +6,6 @@ image:
     path: "/assets/images/crate_pusher/hero.png"
     thumbnail: "/assets/images/crate_pusher/thumb.png"
 categories: gamedev
-comments: true
 ---
 
 Playing computer games has been one of my favourite pastimes for far too many years now.

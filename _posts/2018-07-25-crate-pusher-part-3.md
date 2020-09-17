@@ -6,7 +6,6 @@ image:
     path: "/assets/images/crate_pusher/hero.png"
     thumbnail: "/assets/images/crate_pusher/thumb.png"
 categories: gamedev
-comments: true
 ---
 
 After a lengthy hiatus, caused in part by the exam period and job searching, CratePusher is back in full force!

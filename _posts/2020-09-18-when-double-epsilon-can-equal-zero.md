@@ -6,7 +6,6 @@ image:
     path: "/assets/images/lazer/mxcsr/hero.png"
     thumbnail: "/assets/images/lazer/mxcsr/thumb.png"
 categories: debugging
-comments: true
 ---
 
 Most of the time debugging isn't really much to write about, especially in C\# land.
