@@ -11,8 +11,6 @@ author:
     name: Bartłomiej Dach
     picture: "/assets/images/me.jpg"
 github_username: bdach
-disqus:
-    shortname: the-joy-of-programming
 
 # Build settings
 markdown: kramdown
