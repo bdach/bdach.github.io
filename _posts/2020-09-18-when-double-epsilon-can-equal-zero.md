@@ -96,7 +96,6 @@ Let's break this down further into constituent parts:
 
 - The *vectorised* part means SIMD (*single instruction, multiple data*).
   SIMD instructions allow *data parallelisation* - on a concrete example, you can execute one common instruction simultaneously on `N` different values at a time.
-  This allows multi-core CPUs (and GPUs!) to run fast, as long as the code executed is relatively branchless (as branches force synchronisation across multiple threads/cores).
   Thankfully in this case that part isn't really all that relevant.
 - The *unordered* part relates to `NaN`s.
   In IEEE 754 floating-point math, `NaN`s are special (and annoying) values that fail every comparison they're part of (so a `NaN` is neither less, greater than or equal to any other number, including another `NaN`).
