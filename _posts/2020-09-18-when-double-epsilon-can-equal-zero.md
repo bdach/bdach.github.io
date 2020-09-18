@@ -95,7 +95,7 @@ The `vucomisd` instruction is a - watch out - *vectorised unordered compare of s
 Let's break this down further into constituent parts:
 
 - The *vectorised* part means SIMD (*single instruction, multiple data*).
-  SIMD instructions allow *data parallelisation* - on a concrete example, you can have `N` cores executing the same instruction on the same register(s), but the actual *values* inside those registers can vary.
+  SIMD instructions allow *data parallelisation* - on a concrete example, you can execute one common instruction simultaneously on `N` different values at a time.
   This allows multi-core CPUs (and GPUs!) to run fast, as long as the code executed is relatively branchless (as branches force synchronisation across multiple threads/cores).
   Thankfully in this case that part isn't really all that relevant.
 - The *unordered* part relates to `NaN`s.
@@ -443,3 +443,9 @@ This blog might have peaked with this post, but hopefully there'll be more debug
 I still have some untold ones I haven't summarised yet, so I might get onto that if there's interest.
 
 Until next time!
+
+---
+
+*Sep 18: This post was amended due to incorrectly stating that SIMD instructions work across multiple threads or cores.
+This is not the case, as they simply use larger, 256-bit registers, therefore allowing 4 double-precision values to be handled at a time.
+Thanks to [/u/solraun](https://www.reddit.com/r/programming/comments/iv2vwr/when_doubleepsilon_can_equal_0/g5pkdzt/?utm_source=reddit&utm_medium=web2x&context=3) from reddit for the correction!*
