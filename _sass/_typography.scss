@@ -56,7 +56,15 @@ pre {
 
 @mixin title-text {
     @include header-text;
-    font-size: 3rem;
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+
+    @media (min-width: 1080px) {
+        font-size: 3rem;
+    }
 }
 
 h1,
