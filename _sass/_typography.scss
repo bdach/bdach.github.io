@@ -1,5 +1,15 @@
 @import "colours";
 
+@import url('https://rsms.me/inter/inter.css');
+@font-face {
+	font-family: 'Iosevka Web';
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/assets/fonts/iosevka-medium.woff2') format('woff2');
+}
+
 html {
     font-family: Inter, Helvetica, sans-serif;
     font-size: 14px;
@@ -11,7 +21,7 @@ html {
 }
 
 code, pre {
-    font-family: Iosevka, monospace;
+    font-family: Iosevka Web, monospace;
     background: $code;
     padding: 2px 4px;
     border-radius: 4px;
