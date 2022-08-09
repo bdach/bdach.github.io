@@ -3,9 +3,6 @@ source "https://rubygems.org"
 # GitHub Pages gem
 gem "github-pages", group: :jekyll_plugins
 
-# Theme
-#gem "minima"
-
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
