@@ -33,3 +33,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  # turning these off for now. may bring back later if necessary
+  - about.md
+  - curriculum_vitae.md
