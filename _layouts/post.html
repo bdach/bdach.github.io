@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include navbar.html %}
+        <div class="hero">
+            <img src="{{ page.image.path }}">
+        </div>
+        <div class="article">
+            <div class="article__header">
+                <span class="article__title">{{ page.title }}</span>
+                <p class="article__subtitle">{{ page.sub_title }}</p>
+                <p class="article__date">{{ page.date | date: '%B %d, %Y' }}</p>
+            </div>
+            <div class="article__content">
+                {{ page.content }}
+            </div>
+        </div>
+    </body>
+</html>

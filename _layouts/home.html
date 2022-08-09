@@ -6,14 +6,13 @@
         <div class="content">
             {% for post in paginator.posts %}
             <div class="post">
-                <div class="post__hero">
+                <div class="hero">
                     <img src="{{ post.image.path }}">
                 </div>
                 <div class="post__content">
                     <a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
                     <p>
-                        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-                        <a class="post__read-more" href="{{ post.url }}">»</a>
+                        {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines }}&nbsp;<a class="post__read-more" href="{{ post.url }}">»</a>
                     </p>
                 </div>
             </div>
