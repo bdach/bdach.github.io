@@ -47,13 +47,24 @@ body {
 .hero {
     width: 100%;
     height: 12rem;
-    background: linear-gradient(90deg, $color5 0%, $color1 50%, $color3 100%);
     overflow: hidden;
+    position: relative;
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, $color5 0%, $color1 50%, $color3 100%);
         opacity: 0.5;
     }
 }
