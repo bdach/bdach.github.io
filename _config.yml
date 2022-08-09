@@ -1,7 +1,7 @@
 # Site settings
 
 lang: en-GB
-title: The Joy of Programming
+title: Computing After Hours
 email: dach.bartlomiej@gmail.com
 description: >- 
     A programming blog, focusing on the fun parts of programming.
@@ -19,7 +19,7 @@ plugins:
 repository: bdach/bdach.github.io
 
 # Pagination
-paginate: 5
+paginate: 3
 paginate_path: /page:num/
 
 # Exclude from processing.

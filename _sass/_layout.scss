@@ -1,0 +1,16 @@
+@mixin text-content {
+    width: 100%;
+    padding: 2rem;
+
+    @media (min-width: 768px) {
+        padding: 2rem 6rem;
+    }
+
+    @media (min-width: 960px) {
+        padding: 2rem 12rem;
+    }
+
+    @media (min-width: 1281px) {
+        width: 1280px;
+    }
+}
