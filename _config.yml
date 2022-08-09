@@ -14,10 +14,8 @@ github_username: bdach
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
 repository: bdach/bdach.github.io
 
 # Pagination
