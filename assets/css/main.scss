@@ -153,3 +153,24 @@ body {
         height: 100%;
     }
 }
+
+table {
+    border-spacing: 0;
+
+    th, td {
+        padding: 4px 8px;
+    }
+
+    thead {
+        th {
+            color: $color5;
+            border-bottom: 4px solid $color5;
+        }
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background: $code;
+        }
+    }
+}
