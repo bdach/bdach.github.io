@@ -7,7 +7,7 @@
             {% for post in paginator.posts %}
             <div class="post">
                 <div class="hero">
-                    <img src="{{ post.image.path }}">
+                    <img src="{{ post.image.path }}" alt="{{ post.title }}">
                 </div>
                 <div class="post__content">
                     <a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
