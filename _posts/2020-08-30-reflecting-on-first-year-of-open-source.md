@@ -3,7 +3,7 @@ layout: post
 title: "Reflections on the first year of open source"
 sub_title: "The good, the bad, and the unforeseen parts."
 image:
-    path: "/assets/images/lazer/hero.png"
+    path: "/assets/images/lazer/hero.jpg"
     thumbnail: "/assets/images/lazer/thumb.png"
 categories: open-source
 ---
