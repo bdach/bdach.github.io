@@ -387,6 +387,6 @@ Of course, all of these "deficiencies" are obvious in hindsight. For a black-box
 
 The important thing is, that with the above deconstruction complete, I was finally satisfied. The secret codes were definitively at my will, and I could finally enable all of the secrets and rally race with an RC car. Or a hovercraft. Without having to get good at the game like a *normal* person.
 
-![RC car!](/assets/images/reversing/cmr3/smallcar.png)
+![RC car!](/assets/images/reversing/cmr3/smallcar.jpg)
 
-![Hovercraft!](/assets/images/reversing/cmr3/hovercraft.png)
+![Hovercraft!](/assets/images/reversing/cmr3/hovercraft.jpg)
