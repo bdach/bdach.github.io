@@ -1,19 +1,47 @@
-$code:          #141418;
-$background:    #202126;
+// This is Solarized by Ethan Schoonover.
+// Sourced from https://ethanschoonover.com/solarized/.
+// Licensed under MIT.
 
-$color0:        #210a1c;
-$color1:        #cf511f;
-$color2:        #67a217;
-$color3:        #f3902c;
-$color4:        #1f7d97;
-$color5:        #c62a6e;
-$color6:        #158e5a;
-$color7:        #aeafb7;
-$color8:        #5f3d59;
-$color9:        #ff966c;
-$color10:       #a8eb4d;
-$color11:       #ffbb76;
-$color12:       #63b6ce;
-$color13:       #e96fa4;
-$color14:       #52c091;
-$color15:       #dededf;
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+body {
+	--background-color: #{$base2};
+	--bg-pattern-color: #{$base00};
+
+	--content-color: #{$base03};
+
+	--foreground-color: #{$base3};
+	--foreground-color-hovered: #{$base3};
+
+	--secondary-color: #{$base01};
+	--secondary-color-hovered: #{$base01};
+
+	--border-color: #{$base02};
+	--border-color-hovered: #{$magenta};
+
+	--shadow-color: #{$base02};
+	--shadow-color-hovered: #{$magenta};
+
+	--footer-color: #{$base3};
+
+	--footer-text-color: #{$base00};
+}
+
+@function url-friendly-colour($colour) {
+    @return '%23' + str-slice('#{$colour}', 2, -1)
+}

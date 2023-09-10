@@ -1,105 +1,32 @@
 @import "colours";
 
-@import url('https://rsms.me/inter/inter.css');
 @font-face {
-	font-family: 'Iosevka Web';
+	font-family: 'Roboto Flex';
 	font-display: swap;
-	font-weight: 500;
+	font-weight: 400 800;
+	font-stretch: 60% 150%;
+	font-style: oblique 0deg 10deg;
+	src: url('/assets/fonts/roboto-flex/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf') format(truetype) tech(variations);
+}
+
+@font-face {
+	font-family: 'Berkeley Mono';
+	font-display: swap;
+	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('/assets/fonts/iosevka-medium.woff2') format('woff2');
+	src: url('/assets/fonts/berkeley-mono/BerkeleyMono-Regular.woff2') format('woff2');
 }
 
-html {
-    font-family: Inter, Helvetica, sans-serif;
-    font-size: 14px;
-
-    @media (min-width: 768px)
-    {
-        font-size: 16px;
-    }
-}
-
-code, pre {
-    font-family: Iosevka Web, monospace;
-    background: $code;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-pre {
-    padding: 1rem;
-    overflow: scroll;
-
-    code {
-        padding: 0;
-    }
-}
-
-@mixin header-text {
-    font-weight: 900;
-    color: $color5;
-}
-
-@mixin header-link {
-    @include header-text;
-    text-decoration: none;
-
-    &:hover {
-        color: $color13;
-    }
-
-    &:hover, &:active {
-        text-decoration: underline;
-    }
+@mixin body-text {
+	font-family: 'Roboto Flex', Inter, Helvetica, sans-serif;
+	font-stretch: 60%;
+	font-weight: 400;
 }
 
 @mixin title-text {
-    @include header-text;
-    font-size: 2rem;
-
-    @media (min-width: 768px) {
-        font-size: 2.5rem;
-    }
-
-    @media (min-width: 1080px) {
-        font-size: 3rem;
-    }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @include header-text;
-    margin-top: 2rem;
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.4rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1rem; }
-
-a {
-    color: $color3;
-
-    &:hover {
-        color: $color11;
-    }
-}
-
-blockquote {
-    border-left: 0.5rem solid $color5;
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-p {
-    text-align: justify;
+	font-family: 'Roboto Flex', Inter, Helvetica, sans-serif;
+	font-stretch: 150%;
+	font-weight: 800;
+	font-style: oblique 10deg;
 }

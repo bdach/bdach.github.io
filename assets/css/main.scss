@@ -6,176 +6,93 @@
 @import "typography";
 @import "layout";
 @import "code";
+@import "patterns";
 
 body {
-    background: $background;
-    color: $color15;
+	background-color: var(--background-color);
+	@include circuit-board;
+
+	@include body-text;
+	font-size: 16px;
+	color: var(--content-color);
+
+	padding: 2rem;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    height: 8rem;
-    margin: 0 2rem;
-
-    @media (min-width: 768px) {
-        margin: 0 6rem;
-    }
-
-    &__brand {
-        display: flex;
-        align-items: baseline;
-        flex-direction: column;
-
-        @media (min-width: 960px) {
-            flex-direction: row;
-            gap: 1rem;
-        }
-
-        a {
-            @include header-link;
-            font-size: 2rem;
-        }
-
-        span {
-            @include header-text;
-            font-size: 1.25rem;
-        }
-    }
+@mixin block {
+	border: 2px solid var(--border-color);
+	box-shadow: 0.5rem 0.5rem 0 0 var(--shadow-color);
+	background-color: var(--foreground-color);
 }
 
-.hero {
-    width: 100%;
-    height: 12rem;
-    overflow: hidden;
-    position: relative;
+@mixin block-button
+{
+	@include block;
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+	&:hover {
+		border: 2px solid var(--border-color-hovered);
+		box-shadow: 0.5rem 0.5rem 0 0 var(--shadow-color-hovered);
+		background-color: var(--foreground-color-hovered);
+	}
 
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: linear-gradient(90deg, $color5 0%, $color1 50%, $color3 100%);
-        opacity: 0.4;
-    }
+	transition: all 0.2s ease-in;
 }
 
-.post {
-    &__content {
-        @include text-content;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+nav {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
 
-    &__title {
-        @include header-link;
-        @include title-text;
-    }
+	height: 5rem;
+	margin-bottom: 2rem;
+	line-height: 5rem;
 
-    &__read-more {
-        @include header-link;
-    }
-}
+	.navbar__brand {
+		@include block-button;
+		background-color: var(--secondary-color);
 
-.pagination {
-    @include text-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+		&:hover {
+			background-color: var(--secondary-color);
+		}
 
-    a {
-        @include header-link;
-        font-size: 1.25rem;
-    }
-}
+		a {
+			display: block;
+			height: 100%;
+			padding: 0 2rem;
 
-.article {
-    @include text-content;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+			color: var(--foreground-color);
 
-    &__header {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+			@include title-text;
+			font-size: 2rem;
+			text-decoration: none;
+		}
+	}
 
-    &__title {
-        @include title-text;
-    }
+	.navbar__author {
+		@include block;
 
-    &__subtitle {
-        font-size: 1.5rem;
-        font-weight: 900;
-    }
+		flex-grow: 1;
+		padding: 0 2rem;
 
-    &__date {
-        font-size: 0.875rem;
-        font-weight: 700;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-
-        > p:first-child {
-            font-size: 1.25rem;
-        }
-    }
+		@include title-text;
+		font-size: 1.5rem;
+	}
 }
 
 .youtube-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%;
-    margin-bottom: 1.5rem;
-
-    iframe {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-table {
-    border-spacing: 0;
-
-    th, td {
-        padding: 4px 8px;
-    }
-
-    thead {
-        th {
-            color: $color5;
-            border-bottom: 4px solid $color5;
-        }
-    }
-
-    tbody {
-        tr:nth-child(even) {
-            background: $code;
-        }
-    }
-}
-
-hr {
+	position: relative;
 	width: 100%;
-	color: $color5;
+	height: 0;
+	padding-top: 56.25%;
+	margin-bottom: 1.5rem;
+
+	iframe {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
 }

@@ -1,10 +1,10 @@
 # Site settings
 
 lang: en-GB
-title: Coding After Hours
+title: Lunar Transmissions
 email: dach.bartlomiej@gmail.com
 description: >- 
-    A programming blog, focusing on the fun parts of programming.
+    A programming blog.
     Mostly musings on software architecture and design.
 url: "https://bdach.github.io/"
 author:
@@ -19,7 +19,7 @@ plugins:
 repository: bdach/bdach.github.io
 
 # Pagination
-paginate: 3
+paginate: 8
 paginate_path: /page:num/
 
 # Exclude from processing.
