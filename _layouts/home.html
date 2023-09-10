@@ -3,32 +3,41 @@
     {% include head.html %}
     <body>
         {% include navbar.html %}
-        <div class="content">
+        <div class="posts">
             {% for post in paginator.posts %}
             <div class="post">
-                <div class="hero">
-                    <img src="{{ post.image.path }}" alt="{{ post.title }}">
-                </div>
+		<a href="{{ post.url }}">
+		    <div class="hero">
+			<span class="post__title">{{ post.title }}</span>
+			<img src="{{ post.image.path }}" alt="{{ post.title }}">
+		    </div>
+		</a>
                 <div class="post__content">
-                    <a class="post__title" href="{{ post.url }}">{{ post.title }}</a>
                     <p>
-                        {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines }}&nbsp;<a class="post__read-more" href="{{ post.url }}">»</a>
+                        {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines }}&nbsp;
                     </p>
+
+		    <a class="post__read-more" href="{{ post.url }}">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			    <path d="M24 0L24 24H0L24 0Z" fill="currentColor" />
+			</svg>
+		    </a>
                 </div>
             </div>
             {% endfor %}
-            <div class="pagination">
-                <div>
-                    {% if paginator.previous_page %}
-                        <a href="{{ paginator.previous_page_path }}">« Page {{ paginator.previous_page }}</a>
-                    {% endif %}
-                </div>
-                <div>
-                    {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path }}">Page {{ paginator.next_page }} »</a>
-                    {% endif %}
-                </div>
-            </div>
         </div>
+	<div class="pagination">
+	    <div>
+		{% if paginator.previous_page %}
+		    <a href="{{ paginator.previous_page_path }}">« Page {{ paginator.previous_page }}</a>
+		{% endif %}
+	    </div>
+	    <div>
+		{% if paginator.next_page %}
+		    <a href="{{ paginator.next_page_path }}">Page {{ paginator.next_page }} »</a>
+		{% endif %}
+	    </div>
+	</div>
     </body>
+    {% include footer.html %}
 </html>

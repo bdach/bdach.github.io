@@ -18,6 +18,15 @@
 	src: url('/assets/fonts/berkeley-mono/BerkeleyMono-Regular.woff2') format('woff2');
 }
 
+@font-face {
+	font-family: 'Berkeley Mono';
+	font-display: swap;
+	font-weight: 800;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/assets/fonts/berkeley-mono/BerkeleyMono-Bold.woff2') format('woff2');
+}
+
 @mixin body-text {
 	font-family: 'Roboto Flex', Inter, Helvetica, sans-serif;
 	font-stretch: 60%;
@@ -29,4 +38,9 @@
 	font-stretch: 150%;
 	font-weight: 800;
 	font-style: oblique 10deg;
+}
+
+@mixin mono-text
+{
+	font-family: 'Berkeley Mono', 'Inconsolata', 'Roboto Mono', monospace;
 }
