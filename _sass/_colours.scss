@@ -21,18 +21,16 @@ $green:     #859900;
 
 body {
 	--background-color: #{$base2};
+	--alternate-background-color: #{$base3};
 
-	--content-color: #{$base03};
+	--content-color: #{$base01};
 	--content-color-hovered: #{$magenta};
 
 	--foreground-color: #{$base3};
 	--foreground-color-hovered: #{$base3};
 
 	--secondary-color: #{$base01};
-	--secondary-color-hovered: #{$base01};
-
-	--cover-color: #{$base01};
-	--cover-color-hovered: #{$magenta};
+	--secondary-color-hovered: #{$magenta};
 
 	--cover-text-color: #{$base3};
 	--cover-text-color-hovered: #{$base3};
@@ -46,37 +44,37 @@ body {
 	--footer-color: #{$base3};
 
 	--footer-text-color: #{$base00};
+
+	--link-color: #{$magenta};
 }
 
 @media (prefers-color-scheme: dark)
 {
 	body {
 		--background-color: #{$base02};
+		--alternate-background-color: #{$base03};
 
-		--content-color: #{$base2};
+		--content-color: #{$base1};
 		--content-color-hovered: #{$base2};
 
 		--foreground-color: #{$base02};
 		--foreground-color-hovered: #{$magenta};
 
-		--secondary-color: #{$base2};
-		--secondary-color-hovered: #{$magenta};
+		--secondary-color: #{$base1};
+		--secondary-color-hovered: #{$base2};
 
-		--cover-color: #{$base2};
-		--cover-color-hovered: #{$base2};
-
-		--cover-text-color: #{$base02};
+		--cover-text-color: #{$base03};
 		--cover-text-color-hovered: #{$magenta};
 
-		--border-color: #{$base0};
-		--border-color-hovered: #{$base0};
+		--border-color: #{$base00};
+		--border-color-hovered: #{$base00};
 
 		--shadow-color: #{$base03};
 		--shadow-color-hovered: #{$base03};
 
 		--footer-color: #{$base03};
 
-		--footer-text-color: #{$base0};
+		--footer-text-color: #{$base00};
 	}
 }
 

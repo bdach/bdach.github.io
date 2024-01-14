@@ -5,16 +5,18 @@
         {% include navbar.html %}
         <div class="posts">
             {% for post in paginator.posts %}
-            <div class="post">
+	    <div class="post" onclick="document.location = '{{ post.url }}';">
 		<a href="{{ post.url }}">
 		    <div class="hero">
-			<span class="post__title">{{ post.title }}</span>
+			<div class="post__title">
+				<span class="post__title--text">{{ post.title }}</span>
+			</div>
 			<img src="{{ post.image.path }}" alt="{{ post.title }}">
 		    </div>
 		</a>
                 <div class="post__content">
                     <p>
-                        {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines }}&nbsp;
+                        {{ post.excerpt | strip_html }}&nbsp;
                     </p>
 
 		    <a class="post__read-more" href="{{ post.url }}">

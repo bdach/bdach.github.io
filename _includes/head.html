@@ -9,4 +9,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript" async></script>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content="{{ page.date | date: '%F' }}" />
+    <meta property="og:article:author" content="{{ site.author.name }}" />
+    <meta property="og:image" content="{{ page.image.path | absolute_url }}" />
+    {% endif %}
 </head>

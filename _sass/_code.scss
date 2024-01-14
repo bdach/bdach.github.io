@@ -1,8 +1,8 @@
-//.highlight {
-//    .k, .kt { color: $color13; }
-//    .nn, .nc { color: $color11; }
-//    .nf { color: $color12; }
-//    .s, .sc { color: $color14; }
-//    .cp, .c1 { color: $color7; }
-//    .m, .mi, .mh, .se { color: $color11; }
-//}
+.highlight {
+    .k, .kt { color: #{$green}; }
+    .nn, .nc { color: #{$orange}; }
+    .nf { color: #{$yellow}; }
+    .s, .sc { color: #{$cyan}; }
+    .cp, .c1 { color: var(--footer-text-color); }
+   .m, .mi, .mh, .se { color: #{$magenta}; }
+}
