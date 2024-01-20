@@ -17,13 +17,21 @@ body {
 	@include circuit-board;
 
 	@include body-text;
-	font-size: 16px;
+	font-size: 14px;
 
 	@media (min-width: 800px) {
+		font-size: 16px;
+	}
+
+	@media (min-width: 1366px) {
 		font-size: 18px;
 	}
 
 	color: var(--content-color);
+}
+
+code, pre {
+	@include mono-text;
 }
 
 @mixin block {
@@ -49,15 +57,18 @@ body {
 
 nav {
 	display: grid;
-	column-gap: 2rem;
+		
+	margin: 1rem;
+	column-gap: 1rem;
 	row-gap: 0.5rem;
 
 	@media (min-width: 1024px)
 	{
 		grid-template-columns: auto 1fr;
+		
+		margin: 2rem;
+		column-gap: 2rem;
 	}
-
-	margin: 2rem;
 
 	.navbar__brand {
 		@include block-button;
@@ -111,20 +122,25 @@ nav {
 	display: grid;
 
 	grid-template-columns: 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
+	margin: 0 1rem 3rem 1rem;
 
 	@media (min-width: 800px)
 	{
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	@media (min-width: 1024px) {
+		column-gap: 2rem;
+		row-gap: 2rem;
+		margin: 0 2rem 3rem 2rem;
+	}
+
 	@media (min-width: 1366px)
 	{
 		grid-template-columns: repeat(4, 1fr);
 	}
-
-	column-gap: 2rem;
-	row-gap: 2rem;
-	margin: 0 2rem 3rem 2rem;
 }
 
 .hero {
@@ -238,15 +254,25 @@ nav {
 
 .article {
 	@include block;
-	margin: 0 2rem 5rem 2rem;
+	margin: 0 1rem 5rem 1rem;
 	max-width: 90rem;
+
+	@media (min-width: 1024px) {
+		margin: 0 2rem 5rem 2rem;
+	}
 
 	.hero {
 		min-height: 15rem;
 		@media (min-width: 800px) {
 			min-height: 25rem;
 		}
-		padding: 2rem;
+
+		padding: 1rem;
+
+		@media (min-width: 1024px) {
+			padding: 2rem;
+		}
+
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -281,8 +307,14 @@ nav {
 	&__content {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
-		gap: 1rem;
+
+		padding: 1rem;
+		gap: 0.75rem;
+
+		@media (min-width: 1024px) {
+			padding: 2rem;
+			gap: 1rem;
+		}
 
 		& > p:first-child {
 			font-size: 1.5rem;
@@ -308,7 +340,11 @@ nav {
 		}
 
 		& > .highlighter-rouge > .highlight {
-			margin: 0 -2rem;
+			margin: 0 -1rem;
+
+			@media (min-width: 1024px) {
+				margin: 0 -2rem;
+			}
 		}
 
 		div.highlight {
@@ -370,7 +406,11 @@ footer {
 	background: var(--footer-color);
 	color: var(--footer-text-color);
 
-	padding: 2rem;
+	padding: 1rem;
+
+	@media (min-width: 1024px) {
+		padding: 2rem;
+	}
 
 	border-top: 0.25rem dashed var(--footer-text-color);
 
